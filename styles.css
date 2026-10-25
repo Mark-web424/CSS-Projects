@@ -1,0 +1,151 @@
+/* Author: Natividad, Mark Lorenz P.
+   Section: WD-202
+   Date: July 29,2026
+   */
+
+/*CSS Reset */
+body, header, nav, main, footer, h1, div, img{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+
+/*CSS styles for body and images */
+body{
+    background-color: #0D1636;
+
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/*CSS styles for header*/
+header{
+    width: 10%;
+    float: left;
+    margin-left: 3em;
+}
+
+/*CSS styles for navigation area*/
+nav{
+    width: 75%;
+    float: left;
+    margin-top: 3.5em;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+
+}
+
+nav li{
+    display: inline-block;
+    font-size: 1em;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;
+    
+}
+
+nav li a{
+    display: block;
+    color: #CCA662;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+/*CSS styles for the main section*/
+main{
+    clear: left;
+    background-color: #F8F9FA;
+    padding: 2%;
+    font-size: 1.1em;
+    
+}
+
+
+#Faith, #Fellowship, #Mentorship{
+    width: 29%;
+    float: left;
+    margin: 0 2%;
+
+} 
+
+
+
+#Practices{
+    clear: left;
+    border-top: 1px solid #0D1636;
+    border-bottom: 1px solid #0D1636;
+    background-color: #EAEFEF;
+    padding: 1% 2%;
+
+}
+
+
+#Practices dt{
+    font-weight: bold;
+}
+
+#Practices dd{
+    padding: 0.5% 1% 2% 0;
+}
+
+#contact{
+    text-align: center;
+}
+
+#contact a{
+    color: #CCA662;
+    text-decoration: none;
+}
+
+
+
+.act{
+    font-size: 1.35em;
+    color: #0D1636;
+    font-weight: bold;
+}
+
+.external-link{
+    color: #0D1636;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.map{
+    border: 8px solid #0D1636;
+
+}
+
+
+/*CSS styles for the footer*/
+
+footer p{
+    font-size: 0.75em;
+    text-align: center;
+    color: #CCA662;
+    padding: 0.1em;
+
+}
+
+footer p a{
+    color: #CCA662;
+}
+
+
+/* hero-image Banner Container */
+
+#hero img, .hero-image img {
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;      
+}
+
