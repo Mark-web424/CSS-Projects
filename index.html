@@ -3,11 +3,13 @@
 <head>
     <!--Full Name: Natividad, Mark Lorenz P.
         Section: WD-202
-        Activity: Fitness Website(Own Version)
-        Date: July 29,2026
+        Activity: Fitness Website (Own Version)
+        Date: August 5,2026
         -->
     <title>Knights of the Blessed Sacrament - San Agustin Regiment</title>
     <meta charset="utf-8">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <link rel ="stylesheet" href="styles.css" type="text/css" />
 </head>
 
@@ -23,7 +25,7 @@
     
         <nav>
             <ul>
-                <li><a href = "index.html">Home</a> 
+                <li><a href = "index.html">Home</a> </li>
                 <li><a href = "about.html">About Us</a> </li>
                 <li><a href = "schedule.html">Mass Schedule</a></li>
                 <li><a href = "activities.html">Activities</a></li> 
@@ -32,12 +34,30 @@
         </nav>
 
         <!--Hero-image-->
-        <div id="hero">
+        <div id="hero" class="tablet-desktop">
             <img src="img/hero-image.png" alt="landscape church"/>
         </div>
 
         <main>
-            <div id = "intro">
+            <div class="mobile">
+                <p>Welcome to the San Agustin Parish Youth Ministry in the City of San Fernando, Pampanga. Our mission is to help our young parishioners meet their spiritual goals and grow closer to God.</p>
+
+                <h3>Want to be part of a Knights of the Blessed Sacrament?</h3>
+                <p>Contact us today so you can be one of us!</p>
+                <p class= "tel-link"><a href= "tel:045966-0977">(045) 966-0977</a></p>
+                <h3>Ministry Hours</h3>
+                <ul class="hours">
+                    <li>Saturday: 8:00am - 11:00am(Meeting)</li>
+                    <li>Saturday: Mass Schedule</li>
+                    <li>Sunday: Mass Schedule</li>
+                </ul>
+                <h3>Visit us at:</h3>
+                <p>2MX9+2FQ, MacArthur Hwy, San Fernando, Pampanga</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3853.009527946302!2d120.66616404070314!3d15.047589266034953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f71e5f4a9ceb%3A0x5288ed6552afcb68!2sSan%20Agustin%20Parish%20Church%20-%20City%20of%20San%20Fernando%2C%20Pampanga!5e0!3m2!1sen!2sph!4v1783678637666!5m2!1sen!2sph" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" class="map"></iframe>
+            </div>
+
+            
+            <div id = "intro" class="tablet-desktop">
                 <p>Welcome to the San Agustin Parish Youth Ministry in the City of San Fernando, Pampanga. Our mission is to help our young parishioners meet their spiritual goals and grow closer to God.</p>
 
                 <p>If you love exciting adventures, high-energy gatherings, and being part of a vibrant group that knows how to celebrate life and faith together, this is the place for you. Joining our ministry means unlocking access to awesome youth fellowships, packed sports leagues, creative music and arts programs, and impactful community projects that make a real difference while keeping things fun.</p>

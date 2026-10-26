@@ -1,10 +1,10 @@
 /* Author: Natividad, Mark Lorenz P.
    Section: WD-202
-   Date: July 29,2026
+   Date: August 5,2026
    */
 
 /*CSS Reset */
-body, header, nav, main, footer, h1, div, img{
+body, header, nav, main, footer, h1, div, img, ul{
     margin: 0;
     padding: 0;
     border: 0;
@@ -20,62 +20,127 @@ body{
 img{
     max-width: 100%;
     display: block;
+
 }
+
+/*STYLE RULES FOR MOBILE VIEWPORT*/
+
 
 /*CSS styles for header*/
 header{
-    width: 10%;
-    float: left;
-    margin-left: 3em;
+    position: relative;
+    background-color: #0D1636;
+    height: 190px;
+
+}
+
+header img{
+    margin: 0 auto;
+    max-height: 100%;
+    width: auto;
+
 }
 
 /*CSS styles for navigation area*/
 nav{
-    width: 75%;
-    float: left;
-    margin-top: 3.5em;
+    padding: 1%;
+    margin-bottom: 1%;
+
 }
 
 nav ul{
     list-style-type: none;
-    margin: 0;
     text-align: center;
+    padding-left: 0;
 
 }
 
 nav li{
-    display: inline-block;
-    font-size: 1em;
-    font-family: Verdana, Arial, sans-serif;
-    font-weight: bold;
-    
+    font-size: 1.5em;
+    font-family: 'Francois One', sans-serif;
+    border-top: 1px solid #CCA662;
+
+}
+
+nav li:first-child{
+    border-top: none;
+
 }
 
 nav li a{
     display: block;
     color: #CCA662;
-    text-align: center;
-    padding: 0.5em 1em;
+    padding: 0.5em;
     text-decoration: none;
+
 }
+
+/*show mobile class, hide tablet-desktop class*/
+.mobile{
+    display: block;
+
+}
+
+.tablet-desktop{
+    display: none;
+
+}
+
 
 /*CSS styles for the main section*/
 main{
     clear: left;
     background-color: #F8F9FA;
     padding: 2%;
-    font-size: 1.1em;
+    font-size: 1.15em;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+main ul{
+    padding-left: 1.5em;
+
+}
+
+.tel-link{
+    background-color: #0D1636;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+    color:#CCA662;
     
 }
 
+.hours{
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+    padding-left: 0;
+
+}
+
+.tel-link a{
+    color: #CCA662;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+
+}
 
 #Faith, #Fellowship, #Mentorship{
-    width: 29%;
-    float: left;
     margin: 0 2%;
 
-} 
+}
 
+.round{
+    border-radius: 6px;
+
+}
+
+
+/* Sir commented the 3prac to dd but i wont since i need it for background-color and capitalization*/ 
 
 
 #Practices{
@@ -90,44 +155,52 @@ main{
 
 #Practices dt{
     font-weight: bold;
+
 }
 
 #Practices dd{
     padding: 0.5% 1% 2% 0;
+
 }
+
 
 #contact{
     text-align: center;
+
 }
 
-#contact a{
+#contact .contact-email-link{
     color: #CCA662;
     text-decoration: none;
+
 }
-
-
 
 .act{
     font-size: 1.35em;
     color: #0D1636;
     font-weight: bold;
+
 }
 
 .external-link{
     color: #0D1636;
     font-weight: bold;
     text-decoration: none;
+
 }
 
 .map{
-    border: 8px solid #0D1636;
+    border: 2px solid #0D1636;
+    width: 95%;
+    max-width: 100%;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
 
 }
 
-
 /*CSS styles for the footer*/
-
-footer p{
+footer{
     font-size: 0.75em;
     text-align: center;
     color: #CCA662;
@@ -137,15 +210,5 @@ footer p{
 
 footer p a{
     color: #CCA662;
+
 }
-
-
-/* hero-image Banner Container */
-
-#hero img, .hero-image img {
-    width: 100%;
-    height: 300px;
-    display: block;
-    object-fit: cover;      
-}
-
