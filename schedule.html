@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Full Name: Natividad, Mark Lorenz P.
+        Section: WD-202
+        Activity: Fitness Website (Own Version)
+        Date: August 18,2026
+        -->
+    <title>Knights of the Blessed Sacrament - San Agustin Regiment</title>
+    <meta charset="utf-8">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel ="stylesheet" href="styles.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+</head>
+
+<body>
+    <div id = "container">
+        <header>
+            <a href = "index.html">
+                <img src = "img/SAPlogo.png" alt = "Youth logo"/>
+            </a>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href = "index.html">Home</a> </li>
+                <li><a href = "about.html">About Us</a> </li>
+                <li><a href = "schedule.html">Mass Schedule</a></li>
+                <li><a href = "activities.html">Activities</a></li> 
+                <li><a href = "contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id="hero" class="tablet-desktop">
+                <img src="img/hero-image.png" alt="landscape church"/>
+            </div>
+			
+			<div class="mobile">
+				<h3>Holy Mass Schedule</h3>
+				<p>Sunday Morning Mass: Sun 6:00am, 8:00am &amp; 10:00 am</p> 
+				<p>Sunday Evening Mass: Sun 5:00pm &amp; 6:30pm</p> 
+				<p>Weekdays Mass: Mon-Fri 6:00am</p>
+				<p>Saturday Anticipated: Sat 6:00pm</p>
+				<p>Baptism: Sunday 11:00am</p>
+				<p>Wedding: Saturday &amp; Sunday 3:00pm</p>
+
+			</div>
+			
+			<div class="tablet-desktop">
+				<table>
+					<caption>Holy Mass & Sacraments Schedule</caption>
+					<tr>
+						<th>Service / Mass</th>
+						<th>Days</th>
+						<th>Times</th>
+						<th>Language / Celebrant</th>
+					</tr>
+					<tr>
+						<td>Sunday Mass (Morning)</td>
+						<td>Sunday</td>
+						<td>6:00am, 8:00am, 10:00am</td>
+						<td>English / Tagalog</td>
+					</tr>
+					<tr>
+						<td>Sunday Mass (Evening)</td>
+						<td>Sunday</td>
+						<td>5:00pm, 6:30pm</td>
+						<td>English</td>
+					</tr>
+					<tr>
+						<td>Daily Mass</td>
+						<td>Mon, Tue, Wed, Thu, Fri</td>
+						<td>6:00am</td>
+						<td>Tagalog / Kapampangan</td>
+					</tr>
+					<tr>
+						<td>Anticipated Mass</td>
+						<td>Saturday</td>
+						<td>6:00pm</td>
+						<td>English</td>
+					</tr>
+					<tr>
+						<td>Baptism</td>
+						<td>Sunday</td>
+						<td>11:00am</td>
+						<td>Parish Priests</td>
+					</tr>
+
+                    <tr>
+						<td>Wedding</td>
+						<td>Saturday &amp; Sunday</td>
+						<td>3:00pm</td>
+						<td>Parish Priests</td>
+					</tr>
+					
+				</table>
+			</div>
+			
+			<div id="form">
+				<h2>Complete the form below to be One of Us!</h2>
+				
+				<form class="form-grid">
+					<fieldset>
+						<legend>Contact Information</legend>
+						<label for="ffname">First Name:</label>
+						<input type="text" id="ffname" name="ffname" required />
+						
+						<label for="lname">Last Name:</label>
+	    					<input type="text" id="lname" name="lname" required />
+						
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" required />
+						
+						<label for="phone">Phone:</label>
+						<input type="tel" id="phone" name="phone" required />
+					</fieldset>
+					
+					<fieldset>
+                        <legend>KBS Training & Service</legend>
+                        <p>Select what is your goal to learn as a Knight:</p>
+                        
+                        <label for="altar-serving">
+                            <input type="checkbox" name="learning" id="altar-serving" value="Altar Serving">Altar Serving Duties</label>
+                        
+                        <label for="Server">
+                            <input type="checkbox" name="learning" id="Server" value="Server">Priest Server</label>
+                        
+                        <label for="processional">
+                            <input type="checkbox" name="learning" id="processional" value="Processional Cross">Processional Cross</label>
+                        
+                        <label for="incense-incensation">
+                            <input type="checkbox" name="learning" id="incense-incensation" value="Thurifer Duties">Thurifer & Incense Preparation</label>
+                    </fieldset>
+					
+					<fieldset>
+						<legend>Preferred Schedule</legend>
+						<label for="reference">Select Mass Time:</label>
+						<select name="reference" id="reference">
+							<option value="sun_am">Sunday Morning</option>
+							<option value="sun_pm">Sunday Evening</option>
+							<option value="weekday">Weekday Mass</option>
+							<option value="sat">Saturday Anticipated</option>
+							<option value="other">Other / Special Service</option>
+						</select>
+						
+						<label for="questions">When will you attend to our weekly meeting?</label>
+						<textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+					</fieldset>
+					
+					<input type="submit" id="submit" value="Submit Request" class="btn" />
+				</form>
+			</div>
+
+        </main>
+
+        <footer>
+            <p>&copy; Copyright 2026. All rights reserved. Created by Natividad, Mark Lorenz P.</p>
+            <p><a href = "mailto:sanagustinparish2021csfp@gmail.com">San Agustin Parish, City of San Fernando</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
